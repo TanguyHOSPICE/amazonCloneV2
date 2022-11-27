@@ -1,21 +1,25 @@
 {
-  "name": "amazon-v2_tailwind_nextjs_stripe_nextauth_firebase_fakestoreapi",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@reduxjs/toolkit": "^1.9.0",
-    "next": "13.0.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-redux": "^8.0.5"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.2.4"
-  }
+	"name": "amazon-v2_tailwind_nextjs_stripe_nextauth_firebase_fakestoreapi",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@reduxjs/toolkit": "^1.9.0",
+		"autoprefixer": "^10.4.13",
+		"next": "13.0.5",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-redux": "^8.0.5"
+	},
+	"devDependencies": {
+		"@tailwindcss/line-clamp": "^0.4.2",
+		"postcss": "^8.4.19",
+		"postcss-cli": "^10.0.0",
+		"tailwindcss": "^3.2.4"
+	}
 }
