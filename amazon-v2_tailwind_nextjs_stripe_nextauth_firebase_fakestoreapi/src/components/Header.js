@@ -11,7 +11,7 @@ function Header() {
 					<Image src="https://links.papareact.com/f90" width={50} height={4} objectFit="contain" className="cursor-pointer" />
 				</div>
 
-				{/* Locate */}
+				{/* TODO: Locate */}
 				<div className="text-white flex ">
 					<LocationMarkerIcon width={20} height={20} objectFit="contain" />
 					<div className="flex-col items-start text-xs space-x-6 mx-6 whitespace-nowrap">
@@ -28,17 +28,18 @@ function Header() {
 
 				{/* Right */}
 				<div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
-					<div className="link">
+					<div className="link relative flex flex-col items-center">
 						<p>Hello TOI</p>
-						<p>Compte et listes</p>
+						<p className="font-extrabold md:text-sm hidden md:inline mt-2">Compte et listes</p>
 					</div>
-					<div className="link">
+					<div className="link relative flex flex-col items-center">
 						<p>Retours</p>
-						<p>et commandes</p>
+						<p className="font-extrabold md:text-sm hidden md:inline mt-2">et commandes</p>
 					</div>
-					<div className="link">
+					<div className="link relative flex  items-center">
 						{/*TODO:  Shopping cart */}
-						<p>Basket</p>
+						<ShoppingCartIcon className="h-10" />
+						<p className="font-extrabold md:text-sm hidden md:inline mt-2">Basket</p>
 					</div>
 				</div>
 			</div>
