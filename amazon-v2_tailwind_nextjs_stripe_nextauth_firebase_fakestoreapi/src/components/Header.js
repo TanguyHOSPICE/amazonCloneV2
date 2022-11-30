@@ -8,7 +8,7 @@ function Header() {
 			<div className="flex items-center bg-amazon_blue p-1 flex-grow py-2 h-16">
 				{/* Logo */}
 				<div className="mt-1 flex items-center sm:flex-grow-1 arround">
-					<Image src="https://links.papareact.com/f90" width={128} height={50} objectFit="contain" className="cursor-pointer" />
+					<Image src="https://links.papareact.com/f90" width={80} height={50} objectFit="contain" className="cursor-pointer h-12 object-contain" />
 					<span className="text-xs text-white mb-2">.fr</span>
 				</div>
 
@@ -47,6 +47,7 @@ function Header() {
 						{/*TODO:  Shopping cart */}
 						<ShoppingCartIcon className="h-8" />
 						<p className="font-bold mr-1 md:text-sm  md:inline">Panier</p>
+						<span className="absolute top-0 md:right-11 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">0</span>
 					</div>
 				</div>
 			</div>
