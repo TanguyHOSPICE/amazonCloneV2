@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+	.arround {
+		@apply hover:border border-white;
+	}
 	.link {
 		@apply cursor-pointer hover:underline;
 	}
