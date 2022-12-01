@@ -61,7 +61,7 @@ function Header() {
 			</div>
 
 			{/* Bottom Nav */}
-			<div className="flex items-center bg-amazon_blue-light text-white text-xs space-x-3 p-2 pl-6">
+			<div className="flex items-center bg-amazon_blue-light text-white text-xs text-center space-x-3 p-2 pl-6">
 				<p className="link flex items-center arround">
 					<MenuIcon height={20} />
 					Toutes
