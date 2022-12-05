@@ -10,7 +10,7 @@ export default function Home({ products }) {
 				<Banner />
 
 				{/* ProductFeed */}
-				<ProductFeed />
+				<ProductFeed products={products} />
 			</main>
 		</div>
 	);
