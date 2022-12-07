@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { MenuIcon, SearchIcon, ShoppingCartIcon, LocationMarkerIcon } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
+import { signIn, signOut, useSession } from 'next-auth/react';
 
 function Header() {
 	return (
@@ -41,7 +42,7 @@ function Header() {
 
 				{/* Right */}
 				<div className="text-white flex items-center text-xs space-x-6 whitespace-nowrap max-w-sm">
-					<div className="link relative flex flex-col arround">
+					<div onClick={signIn} className="link relative flex flex-col arround">
 						<p>Bonjour, Identifiez vous</p>
 						<p className="font-bold md:text-sm  md:inline">Compte et listes</p>
 					</div>
