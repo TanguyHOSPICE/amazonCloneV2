@@ -4,7 +4,7 @@ import { ChevronDownIcon } from '@heroicons/react/solid';
 import { signIn, signOut, useSession } from 'next-auth/react';
 
 function Header() {
-	const [session] = useSession();
+	const { data: session } = useSession();
 	return (
 		<header>
 			{/* Top Nav */}
