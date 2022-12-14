@@ -12,7 +12,7 @@ function Header() {
 				{/* Logo */}
 				{/* TODO: Corriger le zoom du logo */}
 				<div className="mt-1 flex items-center sm:flex-grow-1 arround">
-					<Image src="https://links.papareact.com/f90" width={80} height={50} className="cursor-pointer object-contain" />
+					<Image src="https://links.papareact.com/f90" width={80} height={50} objecfit="contain" className="cursor-pointer" />
 					<span className="text-xs text-white mb-2">.fr</span>
 				</div>
 
@@ -43,8 +43,8 @@ function Header() {
 
 				{/* Right */}
 				<div className="text-white flex items-center text-xs space-x-6 whitespace-nowrap max-w-sm">
-					<div onClick={!signIn ? signIn : signOut} className="link relative flex flex-col arround">
-						<p className="hover:underline">{session ? `Bonjour, ${session.user.name}` : 'Identifiez vous'}</p>
+					<div onClick={!session ? signIn : signOut} className="link relative flex flex-col arround">
+						<p className="hover:underline">{session ? `Bonjour, ${session.user.name}` : 'Bonjour, Identifiez vous'}</p>
 						<p className="font-bold md:text-sm  md:inline">Compte et listes</p>
 					</div>
 

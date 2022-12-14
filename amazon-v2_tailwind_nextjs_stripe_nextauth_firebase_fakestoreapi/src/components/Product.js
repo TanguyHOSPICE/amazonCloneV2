@@ -21,7 +21,7 @@ function Product({ id, title, price, description, category, image }) {
 	return (
 		<div className="relative flex flex-col m-5 bg-white z-30 p-10">
 			<p className="absolute top-2 right-2 text-xs italic text-gray-400">{category}</p>
-			<Image src={image} height={200} width={200} className="object-contain w-48 h-52" alt="amazon image" />
+			<Image src={image} height="200" width="200" className="object-contain " alt="amazon image" />
 			<h4 className="my-3">{title}</h4>
 			<div className="flex">
 				{Array(rating)
@@ -35,13 +35,14 @@ function Product({ id, title, price, description, category, image }) {
 				{/* <Currency quantity={price} currency="euros" /> */}
 				{price} €
 			</div>
-
-			{hasPrime && (
-				<div className="flex items-center space-x-2 -mt-5">
-					<img src="https://links.papareact.com/fdw" alt="prime logo" className="w-12" />
-					<p className="text-xs text-gray-500">Livraison gratuite</p>
-				</div>
-			)}
+			<div>
+				{hasPrime && (
+					<div className="flex items-center space-x-2 -mt-5">
+						<img src="https://links.papareact.com/fdw" alt="prime logo" className="w-12" />
+						<p className="text-xs text-gray-500">Livraison gratuite</p>
+					</div>
+				)}
+			</div>
 			<button className="mt-auto button" onClick={addItemToBasket}>
 				Ajouter au panier
 			</button>
