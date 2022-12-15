@@ -3,13 +3,20 @@ import { useSession, signIn, signOut } from 'next-auth/react';
 
 function login() {
 	const { data: session } = useSession();
+	console.log(session);
+
 	if (session) {
-		return <div> `Bonjour, ${session.user.name}`</div>;
+		return (
+			<div>
+				<p>`Bonjour, ${session.user.name}`</p>
+				<button onClick={() => signOut()}>Sign Out</button>
+			</div>
+		);
 	} else {
 		return (
 			<div>
 				<p>Bonjour, Identifiez vous car vous n'êtes pas connecté</p>
-				<button>Sign In</button>
+				<button onClick={() => signIn()}>Sign In</button>
 			</div>
 		);
 	}
